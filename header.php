@@ -4,7 +4,6 @@
 <head>
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width">
-  <title>Инвестируйте в бизнес на Amazon - зарабатывайте от 36-60% на инвестициях в реальный бизнес</title>
   <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/favicon.png" />
   <?php wp_head(); ?>
 </head>
