@@ -17,14 +17,16 @@ p.ultralight {
   font-weight: 100;
 }
 ::-webkit-scrollbar {
-  width: 0 !important;
+  /* width: 0 !important; */
 }
 a {
   text-decoration: none;
   color: inherit;
 }
 * {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "SF Pro Display", Roboto, Ubuntu;
+  font-family:
+    -apple-system, system-ui, BlinkMacSystemFont, 'SF Pro Display', Roboto,
+    Ubuntu;
   font-weight: 600;
   margin: 0;
   padding: 0;
@@ -44,7 +46,7 @@ a {
   vertical-align: bottom;
 }
 .hidden {
-  display: none; 
+  display: none;
 }
 .make-it-slow {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
