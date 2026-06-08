@@ -2,21 +2,23 @@
   position: absolute;
   top: 0;
   left: 0;
+  right: 0;
+  z-index: 1000;
 
   .header-top {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 23px;
-    margin-bottom: 170px;
     .logo_mobile {
       display: none;
     }
+
     .logo_white {
       display: none;
       position: relative;
       z-index: 1000;
     }
+
     .header-top__menu {
       ul {
         display: flex;
@@ -42,6 +44,7 @@
         }
       }
     }
+
     .header-top__left-items {
       display: flex;
       flex-direction: row;
@@ -98,6 +101,7 @@
         box-shadow: 0px 24px 34px rgba(255, 106, 42, 0.1);
       }
     }
+
     .menu-btn {
       z-index: 1000;
       display: none;

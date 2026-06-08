@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_template_part('src/components/header/header'); ?>
 
 <div class="investments">
   <div class="wrapper">
@@ -207,4 +207,4 @@
   </div>
 </div>
 
-<?php get_footer(); ?>
+<?php get_template_part('src/components/footer/footer'); ?>

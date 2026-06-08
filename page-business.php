@@ -1,5 +1,4 @@
-<?php get_header('business'); ?>
-
+<?php get_template_part('src/components/header/header'); ?>
 
 <div class="how-works">
   <div class="wrapper" id="hack">
@@ -186,13 +185,6 @@
   </div>
 </div>
 
-<!--<div class="treb">-->
-<!--    <div class="wrapper">-->
-<!--        <h2 class="h2">Требования к продавцам</h2>-->
-<!--        <img src="<?php echo get_template_directory_uri(); ?>/src/images/treb.svg" alt="">-->
-<!--    </div>-->
-<!--</div>-->
-
 <div class="why">
   <div class="wrapper">
     <div class="why-title">Требования к продавцам</div>
@@ -208,7 +200,6 @@
     </div>
   </div>
 </div>
-
 
 <div class="uzn">
   <div class="bg">
@@ -229,62 +220,4 @@
   </div>
 </div>
 
-<!--<div class="footer">-->
-<!--    <div class="wrapper">-->
-<!--        <div class="top">-->
-<!--            <a href="/"><img src="<?php echo get_template_directory_uri(); ?>/src/images/logo.svg" alt="" class="logo"></a>-->
-<!--            <div class="menu">-->
-<!--                <a href="#" data-class="how-works">Как работает</a>-->
-<!--                <a href="#" data-class="start">Запуск продукта</a>-->
-<!--                <a href="#" data-class="tovarooborot">Увеличение товарооборота</a>-->
-<!--                <a href="#" data-class="how-get">Как получить</a>-->
-<!--                <a href="#" data-class="treb">Требования</a>-->
-<!--                 <a href="#">Инвесторам</a> -->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="middle">-->
-<!--            <div class="soc">-->
-<!--                 <a href="#" class="soc-item" >-->
-<!--                    <img src="<?php echo get_template_directory_uri(); ?>/src/images/vk.svg" class="soc-img" alt="">-->
-<!--                </a> -->
-<!--                <a href="https://www.facebook.com/groups/752559908411612/" target="_blank" class="soc-item" >-->
-<!--                    <img src="<?php echo get_template_directory_uri(); ?>/src/images/fb.svg" class="soc-img" alt="">-->
-<!--                </a>-->
-<!--                 <a href="#" class="soc-item" >-->
-<!--                    <img src="<?php echo get_template_directory_uri(); ?>/src/images/ig.svg" class="soc-img" alt="">-->
-<!--                </a>-->
-<!--                <a href="#" class="soc-item" >-->
-<!--                    <img src="<?php echo get_template_directory_uri(); ?>/src/images/twi.svg" class="soc-img" alt="">-->
-<!--                </a>-->
-<!--                <a href="#" class="soc-item" >-->
-<!--                    <img src="<?php echo get_template_directory_uri(); ?>/src/images/gplus.svg" class="soc-img" alt="">-->
-<!--                </a> -->
-<!--            </div>-->
-<!--            <div class="right">-->
-<!--                <div class="item">-->
-<!--                    <img src="<?php echo get_template_directory_uri(); ?>/src/images/tel.svg" alt="" class="icon">-->
-<!--                    <div class="oline">-->
-<!--                        <div class="top-line">+7 (495) 241-04-53</div>-->
-<!--                        <div class="bottom-line">Пн-Пт, 09:00-20:00</div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="item">-->
-<!--                    <img src="<?php echo get_template_directory_uri(); ?>/src/images/email.svg" alt="" class="icon">-->
-<!--                    <div class="oline">-->
-<!--                        <div class="top-line">team@amazying.com</div>-->
-<!--                        <div class="bottom-line">По всем вопросам</div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="bottom">-->
-<!--            <div class="left">-->
-<!--                <div class="left-top">© 2018</div>-->
-<!--                <div class="left-bottom">Все права защищены</div>-->
-<!--            </div>-->
-<!--            <img src="<?php echo get_template_directory_uri(); ?>/src/images/18.svg" alt="" class="right">-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
-
-<?php get_footer(); ?>
+<?php get_template_part('src/components/footer/footer'); ?>

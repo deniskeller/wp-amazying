@@ -4,16 +4,17 @@
 <head>
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width">
-  <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/favicon.png" />
+  <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/src/images/favicon.png" />
   <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
-  <header class="header">
+  <header class="<?php amazying_header_class(); ?>">
     <div class="wrapper">
       <div class="header-top">
         <img src="<?php echo get_template_directory_uri(); ?>/src/images/logo_desktop.svg" class="logo_desktop"></img>
         <img src="<?php echo get_template_directory_uri(); ?>/src/images/logo_mobile.svg" class="logo_mobile"></img>
+
         <div class="header-top__menu">
           <ul>
             <li>
@@ -27,6 +28,7 @@
             </li>
           </ul>
         </div>
+
         <div class="header-top__left-items">
           <div class="btn-translator">
             <div class="btn btn-eng">ENG</div>
@@ -34,10 +36,12 @@
           </div>
           <a href="/business" class="btn-investor">предпринимателям</a>
         </div>
+
         <a href="#" class="menu-btn">
           <span></span>
         </a>
       </div>
+
       <div class="menu-mobile hidden">
         <img src="<?php echo get_template_directory_uri(); ?>/src/images/logo_mobile-white.svg" class="logo_white"></img>
         <div class="header-top__menu-mobile">

@@ -4,6 +4,8 @@ if (! defined('ABSPATH')) {
   exit;
 }
 
+require_once get_template_directory() . '/src/inc/helpers.php';
+
 if (! function_exists('amazying_theme_setup')) {
   function amazying_theme_setup()
   {

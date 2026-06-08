@@ -4,7 +4,7 @@
 <head>
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width">
-  <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/favicon.png" />
+  <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/src/images/favicon.png" />
   <?php wp_head(); ?>
 </head>
 
@@ -14,22 +14,9 @@
       <img src="<?php echo get_template_directory_uri(); ?>/src/images/header-bg.jpg" alt="" class="img">
     </div>
     <div class="wrapper">
-
       <img src="<?php echo get_template_directory_uri(); ?>/src/images/header-circles.svg" alt="" class="circles">
-      <!--<div class="top">-->
-      <!--    <a href="/"><img src="<?php echo get_template_directory_uri(); ?>/src/images/logo.svg" alt="" class="logo"></a>-->
-      <!--    <div class="menu">-->
-      <!--        <a href="#" data-class="how-works">Как работает</a>-->
-      <!--        <a href="#" data-class="start">Запуск продукта</a>-->
-      <!--        <a href="#" data-class="tovarooborot">Увеличение товарооборота</a>-->
-      <!--        <a href="#" data-class="how-get">Как получить</a>-->
-      <!--        <a href="#" data-class="treb">Требования</a>-->
-      <!--        <a href="#">Инвесторам</a>-->
-      <!--    </div>-->
-      <!--</div>-->
 
       <div class="header-top">
-
         <img src="<?php echo get_template_directory_uri(); ?>/src/images/logo-white-desktop.svg" class="logo_desktop"></img>
         <img src="<?php echo get_template_directory_uri(); ?>/src/images/logo_mobile-white.svg" class="logo_mobile"></img>
 
@@ -66,6 +53,7 @@
         </div>
 
       </div>
+
       <div class="menu-mobile hidden">
         <img src="<?php echo get_template_directory_uri(); ?>/src/images/logo_mobile-white.svg" class="logo_white"></img>
         <div class="header-top__menu-mobile">
@@ -98,12 +86,10 @@
         </div>
       </div>
 
-
-
-
       <div class="pre-h1">
         <span class="red">AmazYing</span> <span class="line"></span> финансовый партнёр по бизнесу на Amazon
       </div>
+
       <h1 class="h1">Получи до 50 000$ на развитие бизнеса на Amazon</h1>
       <div class="sub-h1">Выдаем деньги на увеличение товарооборота или запуск нового продукта на Amazon и помогаем правильно запустить продажи</div>
       <div class="right-block">
