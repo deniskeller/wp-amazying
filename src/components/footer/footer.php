@@ -110,7 +110,6 @@
 </footer>
 
 <div class="reg-modal">
-
   <div class="wrapper">
     <img src="<?php echo get_template_directory_uri(); ?>/src/images/nice-close.svg" alt="" class="close">
     <div class="title">Регистрация инвестора</div>
