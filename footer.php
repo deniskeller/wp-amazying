@@ -1,7 +1,7 @@
 <footer class="footer">
   <div class="wrapper">
     <div class="footer-top">
-      <img src="<?php echo get_template_directory_uri(); ?>/images/logo-white.svg" class="logo_white"></img>
+      <img src="<?php echo get_template_directory_uri(); ?>/src/images/logo-white.svg" class="logo_white"></img>
       <div class="header-top__menu">
         <ul>
           <li>
@@ -31,7 +31,7 @@
         <div class="footer-email__text">Подпишитесь на рассылку</div>
         <div class="footer-email__btn">
           <input type="email" name="email" class="enter-mail" placeholder="Введите email">
-          <div class="btn-enter"><img src="<?php echo get_template_directory_uri(); ?>/images/arrow_white.svg" class="arrow_white"></div>
+          <div class="btn-enter"><img src="<?php echo get_template_directory_uri(); ?>/src/images/arrow_white.svg" class="arrow_white"></div>
         </div>
 
       </div>
@@ -46,19 +46,19 @@
 
         <div class="footer-social__items">
           <a href="#">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/vk.svg" class="vk">
+            <img src="<?php echo get_template_directory_uri(); ?>/src/images/vk.svg" class="vk">
           </a>
           <a href="https://www.facebook.com/groups/752559908411612/" target="_blank">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/fb.svg" alt="fb">
+            <img src="<?php echo get_template_directory_uri(); ?>/src/images/fb.svg" alt="fb">
           </a>
           <a href="#">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/insta.svg" class="insta">
+            <img src="<?php echo get_template_directory_uri(); ?>/src/images/insta.svg" class="insta">
           </a>
           <a href="#">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/tw.svg" class="tw">
+            <img src="<?php echo get_template_directory_uri(); ?>/src/images/tw.svg" class="tw">
           </a>
           <a href="#">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/google.svg" class="google">
+            <img src="<?php echo get_template_directory_uri(); ?>/src/images/google.svg" class="google">
           </a>
         </div>
 
@@ -72,7 +72,7 @@
 
         <div class="footer-address__phone">
           <div class="phone">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/phone.svg" class="phone-img">
+            <img src="<?php echo get_template_directory_uri(); ?>/src/images/phone.svg" class="phone-img">
             +7 (495) 241-04-53
           </div>
           <div class="mode">Пн-Пт, 09:00-20:00</div>
@@ -81,7 +81,7 @@
 
         <div class="footer-address__email">
           <div class="email">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/mail.svg" class="email-img">
+            <img src="<?php echo get_template_directory_uri(); ?>/src/images/mail.svg" class="email-img">
             team@amazying.com
           </div>
           <div class="mode">По всем вопросам</div>
@@ -112,14 +112,14 @@
 <div class="reg-modal">
 
   <div class="wrapper">
-    <img src="<?php echo get_template_directory_uri(); ?>/images/nice-close.svg" alt="" class="close">
+    <img src="<?php echo get_template_directory_uri(); ?>/src/images/nice-close.svg" alt="" class="close">
     <div class="title">Регистрация инвестора</div>
-    <img class="img" src="<?php echo get_template_directory_uri(); ?>/images/happy-guys.svg" alt="">
+    <img class="img" src="<?php echo get_template_directory_uri(); ?>/src/images/happy-guys.svg" alt="">
     <div class="inputs">
       <input type="email" class="input" placeholder="Введите email" name="email">
       <input type="password" class="input" placeholder="Пароль" name="password">
       <input type="password" class="input" placeholder="Повторите пароль" name="confirm">
-      <a href="#" class="button reg-but">Регистрация <img src="<?php echo get_template_directory_uri(); ?>/images/arrow_white.svg" alt="" class="arrow"></a>
+      <a href="#" class="button reg-but">Регистрация <img src="<?php echo get_template_directory_uri(); ?>/src/images/arrow_white.svg" alt="" class="arrow"></a>
     </div>
   </div>
 </div>
@@ -127,8 +127,8 @@
 
 <div class="thank-modal">
   <div class="wrapper">
-    <img src="<?php echo get_template_directory_uri(); ?>/images/red-close.svg" class="red-close">
-    <img src="<?php echo get_template_directory_uri(); ?>/images/thank-bg.svg" class="thank-bg">
+    <img src="<?php echo get_template_directory_uri(); ?>/src/images/red-close.svg" class="red-close">
+    <img src="<?php echo get_template_directory_uri(); ?>/src/images/thank-bg.svg" class="thank-bg">
     <div class="modal-content">
       <div class="title">Спасибо!</div>
       <div class="text">Мы свяжемся с вами <br> в рабочее время <br> с 10:00 до 19:00</div>

@@ -12,8 +12,8 @@
   <header class="header">
     <div class="wrapper">
       <div class="header-top">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/logo_desktop.svg" class="logo_desktop"></img>
-        <img src="<?php echo get_template_directory_uri(); ?>/images/logo_mobile.svg" class="logo_mobile"></img>
+        <img src="<?php echo get_template_directory_uri(); ?>/src/images/logo_desktop.svg" class="logo_desktop"></img>
+        <img src="<?php echo get_template_directory_uri(); ?>/src/images/logo_mobile.svg" class="logo_mobile"></img>
         <div class="header-top__menu">
           <ul>
             <li>
@@ -39,7 +39,7 @@
         </a>
       </div>
       <div class="menu-mobile hidden">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/logo_mobile-white.svg" class="logo_white"></img>
+        <img src="<?php echo get_template_directory_uri(); ?>/src/images/logo_mobile-white.svg" class="logo_white"></img>
         <div class="header-top__menu-mobile">
           <ul>
             <li>
@@ -61,37 +61,14 @@
           </div>
         </div>
       </div>
-      <div class="header-content">
-        <div class="header-content__left">
-          <div class="second-title">Новый способ умножить инвестиции вместе с Амазон</div>
-          <div class="title">Инвестируйте в бизнес на амазон</div>
-          <div class="text">Получите доступ к проектам, инвестируйте в торговый оборот, зарабатывайте от 36-60% на инвестициях в реальный бизнес на Амазон.</div>
-          <div class="btn-mail">
-            <input type="email" name="login" class="enter-mail" placeholder="Введите email">
-            <div class="btn_check-in">регистрация <img src="<?php echo get_template_directory_uri(); ?>/images/arrow_white.svg" class="arrow_white">
-            </div>
-          </div>
-          <div class="statistics">
-            <div class="item">
-              <div class="title">оборот амазон</div>
-              <div class="numbers">411 000 000$</div>
-            </div>
-
-            <div class="item">
-              <div class="title">товаров в базе</div>
-              <div class="numbers">321</div>
-            </div>
-
-            <div class="item">
-              <div class="title">инвесторов</div>
-              <div class="numbers">67</div>
-            </div>
-          </div>
-        </div>
-        <div class="header-content__right">
-          <img src="<?php echo get_template_directory_uri(); ?>/images/gardener.svg" class="gardener"></img>
-          <img src="<?php echo get_template_directory_uri(); ?>/images/gardener-mobile.svg" class="gardener-mobile"></img>
-        </div>
-      </div>
     </div>
   </header>
+
+
+  <!--
+    - вынестри верстку меню в отдельный блок
+    - переверстать 1ые блоки на главной странице
+    - переверстать 1ые блоки на бизнес странице
+    - вывести список меню в  админке
+    - сделать флаг для стилей меню
+  -->

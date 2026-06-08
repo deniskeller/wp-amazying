@@ -24,20 +24,67 @@ add_action('after_setup_theme', 'amazying_theme_setup');
 // подключение стилей и скриптов
 function amazying_enqueue_scripts()
 {
-  if (is_front_page()) {
-    // стили
-    wp_enqueue_style('amazying-main-style', get_template_directory_uri() . '/style/style.css', array(), '1.0.0');
-    wp_enqueue_style('amazying-media', get_template_directory_uri() . '/style/media.css', array(), '1.0.0');
-  } elseif (is_page('business')) {
-    // стили
-    wp_enqueue_style('amazying-investor-style', get_template_directory_uri() . '/style/style_investor.css', array(), '1.0.0');
-    wp_enqueue_style('amazying-media', get_template_directory_uri() . '/style/media.css', array(), '1.0.0');
-
-    // слайдер
-    wp_enqueue_style('slick-carousel', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css', array(), '1.8.1');
+  // Определяем, запущен ли режим разработки Vite (проверяем доступность сервера Vite)
+  $is_dev = false;
+  $fp = @fsockopen('localhost', 5173, $errno, $errstr, 0.1);
+  if ($fp) {
+    $is_dev = true;
+    fclose($fp);
   }
-  // главный файл скриптов
-  wp_enqueue_script('amazying-custom-js', get_template_directory_uri() . '/js/script.js', array(), filemtime(get_template_directory() . '/js/script.js'), true);
+
+  if ($is_dev) {
+    // подключаем клиент Vite
+    wp_enqueue_script('vite-client', 'http://localhost:5173/@vite/client', array(), null, true);
+
+    // подключаем главный js файл
+    wp_enqueue_script('amazying-vite-main', 'http://localhost:5173/src/js/main.js', array(), null, true);
+
+    // настрйоки для страниц
+    if (is_page('business')) {
+      wp_enqueue_style('amazying-vite-investor', 'http://localhost:5173/src/styles/style_investor.scss', array(), null);
+      wp_enqueue_style('slick-carousel', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css', array(), '1.8.1');
+    }
+  } else {
+    $manifest_path = get_template_directory() . '/dist/.vite/manifest.json';
+
+    if (file_exists($manifest_path)) {
+      $manifest = json_decode(file_get_contents($manifest_path), true);
+
+      // Подключаем скомпилированный главный JS
+      $js_file = $manifest['src/js/main.js']['file'];
+      wp_enqueue_script('amazying-prod-js', get_template_directory_uri() . '/dist/' . $js_file, array(), filemtime(get_template_directory() . '/dist/' . $js_file), true);
+
+      // Подключаем скомпилированные CSS стили
+      if (isset($manifest['src/js/main.js']['css'])) {
+        foreach ($manifest['src/js/main.js']['css'] as $css_file) {
+          wp_enqueue_style('amazying-prod-css-' . md5($css_file), get_template_directory_uri() . '/dist/' . $css_file, array(), null);
+        }
+      }
+
+      // Если страница бизнеса - берем из манифеста скомпилированный стиль инвестора
+      if (is_page('business') && isset($manifest['src/styles/style_investor.scss']['file'])) {
+        $investor_css = $manifest['src/styles/style_investor.scss']['file'];
+        wp_enqueue_style('amazying-prod-investor', get_template_directory_uri() . '/dist/' . $investor_css, array(), null);
+      }
+    }
+  }
 }
 // Привязываем функцию подключения к системному хуку WordPress
 add_action('wp_enqueue_scripts', 'amazying_enqueue_scripts');
+
+
+/**
+ * Перехватываем тег скрипта Vite и добавляем ему type="module"
+ */
+function amazying_set_script_attributes(string $tag, string $handle, ?string $src): string
+{
+  // Массив с ID скриптов, которым нужен тип модуля
+  $vite_scripts = array('vite-client', 'amazying-vite-main');
+
+  if (in_array($handle, $vite_scripts)) {
+    return '<script type="module" src="' . esc_url((string) $src) . '"></script>' . "\n";
+  }
+
+  return $tag;
+}
+add_filter('script_loader_tag', 'amazying_set_script_attributes', 10, 3);

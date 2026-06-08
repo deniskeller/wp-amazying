@@ -11,13 +11,13 @@
 <body <?php body_class(); ?>>
   <header class="header">
     <div class="bg">
-      <img src="<?php echo get_template_directory_uri(); ?>/images/header-bg.jpg" alt="" class="img">
+      <img src="<?php echo get_template_directory_uri(); ?>/src/images/header-bg.jpg" alt="" class="img">
     </div>
     <div class="wrapper">
 
-      <img src="<?php echo get_template_directory_uri(); ?>/images/header-circles.svg" alt="" class="circles">
+      <img src="<?php echo get_template_directory_uri(); ?>/src/images/header-circles.svg" alt="" class="circles">
       <!--<div class="top">-->
-      <!--    <a href="/"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.svg" alt="" class="logo"></a>-->
+      <!--    <a href="/"><img src="<?php echo get_template_directory_uri(); ?>/src/images/logo.svg" alt="" class="logo"></a>-->
       <!--    <div class="menu">-->
       <!--        <a href="#" data-class="how-works">Как работает</a>-->
       <!--        <a href="#" data-class="start">Запуск продукта</a>-->
@@ -30,8 +30,8 @@
 
       <div class="header-top">
 
-        <img src="<?php echo get_template_directory_uri(); ?>/images/logo-white-desktop.svg" class="logo_desktop"></img>
-        <img src="<?php echo get_template_directory_uri(); ?>/images/logo_mobile-white.svg" class="logo_mobile"></img>
+        <img src="<?php echo get_template_directory_uri(); ?>/src/images/logo-white-desktop.svg" class="logo_desktop"></img>
+        <img src="<?php echo get_template_directory_uri(); ?>/src/images/logo_mobile-white.svg" class="logo_mobile"></img>
 
         <div class="header-top__right">
           <div class="header-top__menu">
@@ -67,7 +67,7 @@
 
       </div>
       <div class="menu-mobile hidden">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/logo_mobile-white.svg" class="logo_white"></img>
+        <img src="<?php echo get_template_directory_uri(); ?>/src/images/logo_mobile-white.svg" class="logo_white"></img>
         <div class="header-top__menu-mobile">
           <ul>
             <li>
@@ -107,13 +107,13 @@
       <h1 class="h1">Получи до 50 000$ на развитие бизнеса на Amazon</h1>
       <div class="sub-h1">Выдаем деньги на увеличение товарооборота или запуск нового продукта на Amazon и помогаем правильно запустить продажи</div>
       <div class="right-block">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/header-window.svg" alt="" class="right-bg">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/coin.svg" alt="" class="coin-bg">
+        <img src="<?php echo get_template_directory_uri(); ?>/src/images/header-window.svg" alt="" class="right-bg">
+        <img src="<?php echo get_template_directory_uri(); ?>/src/images/coin.svg" alt="" class="coin-bg">
         <div class="open-wrapper">
-          <img src="<?php echo get_template_directory_uri(); ?>/images/header-copy.svg" alt="" class="copy">
+          <img src="<?php echo get_template_directory_uri(); ?>/src/images/header-copy.svg" alt="" class="copy">
           <h2 class="h2">Узнайте, сколько денег вы можете привлечь на развитие бизнеса</h2>
           <div class="text">Эксперты AmazYing оценят перспективы товара и посчитают ваш лимит</div>
-          <a href="#" class="button make-it-slow"><span>Заполнить анкету</span> <img src="<?php echo get_template_directory_uri(); ?>/images/header-arrow.svg" alt="" class="arrow"></a>
+          <a href="#" class="button make-it-slow"><span>Заполнить анкету</span> <img src="<?php echo get_template_directory_uri(); ?>/src/images/header-arrow.svg" alt="" class="arrow"></a>
         </div>
       </div>
     </div>

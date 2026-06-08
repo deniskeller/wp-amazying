@@ -1,0 +1,251 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  .header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 23px;
+    margin-bottom: 170px;
+    .logo_mobile {
+      display: none;
+    }
+    .logo_white {
+      display: none;
+      position: relative;
+      z-index: 1000;
+    }
+    .header-top__menu {
+      ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        li {
+          list-style: none;
+          margin-right: 56px;
+          a {
+            line-height: normal;
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #909499;
+            font-weight: 600;
+          }
+          a:hover {
+            color: #ff4f45;
+          }
+        }
+        li:last-child {
+          margin-right: 0px;
+        }
+      }
+    }
+    .header-top__left-items {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .btn-translator {
+        // display: flex;
+        display: none;
+        .btn {
+          line-height: normal;
+          font-size: 12px;
+          font-weight: 600;
+          text-transform: uppercase;
+          color: #909499;
+          cursor: pointer;
+        }
+        .btn-eng {
+          position: relative;
+          margin-right: 18px;
+        }
+        .btn-eng::after {
+          position: absolute;
+          right: -9px;
+          top: 0px;
+          content: '';
+          width: 1px;
+          height: 17px;
+          background: #efefe8;
+          cursor: auto;
+        }
+        .btn-active {
+          color: #222a33;
+        }
+      }
+      .btn-investor {
+        line-height: normal;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #222a33;
+        border: 1px solid #909499;
+        border-radius: 25px;
+        padding: 13px 21px;
+        margin-left: 21px;
+        cursor: pointer;
+        font-weight: 600;
+      }
+      .btn-investor:hover {
+        color: #fff;
+        background: #ff4f45;
+        box-shadow: 0px 14px 34px rgba(196, 0, 0, 0.12);
+        border: 1px solid #ff4f45;
+      }
+      .btn-investor:active {
+        background: #e3372e;
+        box-shadow: 0px 24px 34px rgba(255, 106, 42, 0.1);
+      }
+    }
+    .menu-btn {
+      z-index: 1000;
+      display: none;
+      width: 22px;
+      height: 22px;
+      position: relative;
+      span {
+        position: absolute;
+        top: 50%;
+        width: 22px;
+        height: 2px;
+        background: #000;
+      }
+      span::after {
+        display: block;
+        position: absolute;
+        content: '';
+        width: 22px;
+        height: 2px;
+        background: #000;
+        transform: translateY(6px);
+        transition: 0.5s;
+      }
+      span::before {
+        display: block;
+        position: absolute;
+        content: '';
+        width: 22px;
+        height: 2px;
+        background: #000;
+        transform: translateY(-6px);
+        transition: 0.2s;
+      }
+    }
+    .menu-btn_active span {
+      height: 0;
+    }
+    .menu-btn_active span::before {
+      transform: rotate(45deg);
+      background: #fff;
+    }
+    .menu-btn_active span::after {
+      transform: rotate(-45deg);
+      background: #fff;
+    }
+  }
+
+  .menu-mobile {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    padding-bottom: 35px;
+    margin-top: -223px;
+    padding-top: 170px;
+    background: #222a33;
+    .logo_white {
+      display: block;
+      position: absolute;
+      top: 25px;
+      left: 20px;
+      cursor: pointer;
+    }
+    .header-top__menu-mobile {
+      margin-left: 20px;
+      margin-right: 20px;
+      ul {
+        display: flex;
+        flex-direction: column;
+
+        li {
+          list-style: none;
+          margin-bottom: 25px;
+          a {
+            line-height: normal;
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #fff;
+            font-weight: 600;
+          }
+          a:hover {
+            color: #ff4f45;
+          }
+        }
+        li:last-child {
+          margin-bottom: 70px;
+        }
+      }
+    }
+    .header-top__left-items-mobile {
+      display: flex;
+      flex-direction: column;
+      .btn-translator {
+        // display: flex;
+        display: none;
+        margin-left: 20px;
+        margin-right: 20px;
+        .btn {
+          line-height: normal;
+          font-size: 12px;
+          font-weight: 600;
+          text-transform: uppercase;
+          color: #fff;
+          cursor: pointer;
+        }
+        .btn-eng {
+          position: relative;
+          margin-right: 18px;
+        }
+        .btn-eng::after {
+          position: absolute;
+          right: -9px;
+          top: 0px;
+          content: '';
+          width: 1px;
+          height: 17px;
+          background: #efefe8;
+          cursor: auto;
+        }
+        .btn-active {
+          color: #909499;
+        }
+      }
+      .btn-investor {
+        max-width: 182px;
+        justify-content: center;
+        align-items: center;
+        line-height: normal;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #fff;
+        border: 1px solid #909499;
+        border-radius: 25px;
+        padding: 13px 21px;
+        margin-left: 21px;
+        cursor: pointer;
+        font-weight: 600;
+        margin-bottom: 59px;
+      }
+      .btn-investor:hover {
+        color: #fff;
+        background: #ff4f45;
+        box-shadow: 0px 14px 34px rgba(196, 0, 0, 0.12);
+        border: 1px solid #ff4f45;
+      }
+      .btn-investor:active {
+        background: #e3372e;
+        box-shadow: 0px 24px 34px rgba(255, 106, 42, 0.1);
+      }
+    }
+  }
+}
