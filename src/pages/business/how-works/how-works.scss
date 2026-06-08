@@ -1,0 +1,70 @@
+.how-works {
+  .wrapper {
+    position: relative;
+    .h2 {
+      line-height: normal;
+      font-size: 50px;
+      text-align: center;
+      margin: 0 auto;
+      margin-top: 50px;
+      color: #222a33;
+      z-index: 150;
+      position: relative;
+      font-weight: bold;
+    }
+    .hows {
+      position: relative;
+      height: 20px;
+      .how-1 {
+        position: absolute;
+        left: -213px;
+        z-index: 101;
+      }
+      .how-2 {
+        position: absolute;
+        left: 50%;
+        margin-left: -475px;
+        top: -320px;
+        z-index: 100;
+      }
+      .how-3 {
+        position: absolute;
+        right: -213px;
+      }
+      .how-1-mobile,
+      .how-2-mobile,
+      .how-3-mobile {
+        display: none;
+      }
+    }
+    .bullets {
+      font-size: 0;
+      margin-top: 690px;
+      text-align: center;
+      .bullet {
+        max-width: 300px;
+        margin-left: 57px;
+        margin-right: 57px;
+        display: inline-block;
+        vertical-align: top;
+        .h3 {
+          margin-top: 20px;
+          line-height: normal;
+          font-size: 12px;
+          text-align: center;
+          text-transform: uppercase;
+          color: #ff4f45;
+          font-weight: bold;
+        }
+        .text {
+          margin-top: 18px;
+          line-height: normal;
+          font-size: 20px;
+          text-align: center;
+          font-weight: bold;
+          color: #222a33;
+        }
+      }
+    }
+  }
+}

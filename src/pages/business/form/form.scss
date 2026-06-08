@@ -1,0 +1,103 @@
+.form {
+  margin-top: 50px;
+  .wrapper {
+    overflow: hidden;
+    height: 800px;
+    .form {
+      position: absolute;
+      bottom: -735px;
+      left: -195px;
+      right: 0;
+    }
+    .h2 {
+      font-weight: bold;
+      line-height: normal;
+      font-size: 50px;
+      text-align: center;
+      color: #ffffff;
+      max-width: 560px;
+      position: absolute;
+      bottom: 273px;
+      left: 50%;
+      margin-left: -280px;
+    }
+    .inputs {
+      position: absolute;
+      bottom: 169px;
+      left: 50%;
+      margin-left: -402px;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: -ms-flex;
+      display: flex;
+      -webkit-align-items: center;
+      -ms-align-items: center;
+      align-items: center;
+      -webkit-justify-content: space-between;
+      -ms-justify-content: space-between;
+      justify-content: space-between;
+      .name-input {
+        width: 280px;
+        height: 50px;
+        background: rgba(255, 255, 255, 0.3);
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        box-sizing: border-box;
+        border-radius: 25px 0 0 25px;
+        color: #fff;
+        padding: 15px 30px;
+        font-size: 16px;
+      }
+      .phone-input {
+        max-width: 280px;
+        height: 50px;
+        background: rgba(255, 255, 255, 0.3);
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        box-sizing: border-box;
+        color: #fff;
+        padding: 15px 30px;
+        font-size: 16px;
+      }
+      .button {
+        width: 201px;
+        height: 20px;
+        background: #ffffff;
+        box-shadow: 0px 24px 34px rgba(255, 106, 42, 0.75);
+        border-radius: 0 25px 25px 0;
+        line-height: normal;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #ff4f45;
+        font-weight: bold;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: -ms-flex;
+        display: flex;
+        -webkit-align-items: center;
+        -ms-align-items: center;
+        align-items: center;
+        -webkit-justify-content: space-between;
+        -ms-justify-content: space-between;
+        justify-content: space-between;
+        padding: 15px 21px;
+        span {
+          margin-left: 21px;
+        }
+        &:hover {
+          box-shadow: 0px 4px 4px #ff6a2a;
+        }
+      }
+    }
+    .text {
+      font-weight: bold;
+      max-width: 480px;
+      line-height: normal;
+      font-size: 20px;
+      text-align: center;
+      color: #ffffff;
+      position: absolute;
+      bottom: 64px;
+      left: 50%;
+      margin-left: -250px;
+    }
+  }
+}

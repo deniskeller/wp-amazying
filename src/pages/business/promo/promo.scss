@@ -1,0 +1,140 @@
+.promo {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 800px;
+  .bg {
+    position: absolute;
+    height: 800px;
+    overflow: hidden;
+    z-index: 0;
+    width: 100%;
+    .img {
+      width: 100%;
+      min-width: 1700px;
+      height: auto;
+    }
+  }
+  .wrapper {
+    z-index: 99;
+    position: relative;
+    padding-top: 25px;
+    .circles {
+      position: absolute;
+      bottom: -647px;
+      left: -514px;
+      z-index: -1;
+    }
+    .pre-h1 {
+      line-height: normal;
+      font-size: 12px;
+      text-transform: uppercase;
+      color: #ffffff;
+      display: inline-block;
+      margin-top: 194px;
+      padding: 10px 18px;
+      background: rgba(34, 42, 51, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-sizing: border-box;
+      border-radius: 17.5px;
+      font-weight: bold;
+      .red {
+        font-size: inherit;
+        font-weight: bold;
+        color: #ff4f45;
+      }
+      .line {
+        width: 20px;
+        height: 0px;
+        display: inline-block;
+        border: 1px solid #ffffff;
+        margin-bottom: 4px;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    }
+    .h1 {
+      margin-top: 29px;
+      max-width: 524px;
+      line-height: normal;
+      font-size: 50px;
+      color: #ffffff;
+      font-weight: bold;
+    }
+    .sub-h1 {
+      margin-top: 20px;
+      max-width: 524px;
+      line-height: normal;
+      font-size: 20px;
+      color: #ffffff;
+      font-weight: bold;
+    }
+    .right-block {
+      width: 370px;
+      height: 424px;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      .right-bg {
+        position: absolute;
+        z-index: -1;
+      }
+      .coin-bg {
+        display: none;
+        position: absolute;
+        top: -40px;
+        left: 20px;
+      }
+      .open-wrapper {
+        position: relative;
+        margin-top: 97px;
+        margin-left: 70px;
+        .h2 {
+          width: 260px;
+          margin-top: 20px;
+          line-height: normal;
+          font-size: 20px;
+          color: #ffffff;
+          font-weight: bold;
+        }
+        .text {
+          width: 260px;
+          margin-top: 11px;
+          line-height: normal;
+          font-size: 16px;
+          color: #ffffff;
+        }
+        .button {
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: -ms-flex;
+          display: flex;
+          -webkit-align-items: center;
+          -ms-align-items: center;
+          align-items: center;
+          -webkit-justify-content: space-between;
+          -ms-justify-content: space-between;
+          justify-content: space-between;
+          margin-top: 27px;
+          line-height: normal;
+          position: relative;
+          padding: 18px 24px;
+          background: #ffffff;
+          box-shadow: 0px 24px 34px rgba(255, 106, 42, 0.75);
+          border-radius: 25px;
+          width: 182px;
+          height: 14px;
+          span {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #ff4f45;
+            font-weight: bold;
+          }
+          &:hover {
+            box-shadow: 0px 4px 4px #ff6a2a;
+          }
+        }
+      }
+    }
+  }
+}

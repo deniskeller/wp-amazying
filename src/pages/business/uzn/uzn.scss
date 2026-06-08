@@ -1,0 +1,109 @@
+.uzn {
+  position: relative;
+  width: 100%;
+  min-height: 800px;
+  .bg {
+    position: absolute;
+    height: 800px;
+    overflow: hidden;
+    z-index: 0;
+    width: 100%;
+    .img {
+      width: 100%;
+      min-width: 1700px;
+      height: auto;
+    }
+  }
+  .circles-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+  .circles-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+  }
+  .wrapper {
+    z-index: 99;
+    position: relative;
+    padding-top: 25px;
+    .window-block {
+      width: 100%;
+      max-width: 742px;
+      height: 563px;
+      position: absolute;
+      left: 50%;
+      margin-left: -371px;
+      top: 117px;
+      .window-bg {
+        position: absolute;
+        z-index: -1;
+      }
+      .coin-bg {
+        display: none;
+        position: absolute;
+        top: -40px;
+        left: 20px;
+        z-index: 1000;
+      }
+      .open-wrapper {
+        position: relative;
+        margin-top: 140px;
+        text-align: center;
+        .h2 {
+          max-width: 625px;
+          margin: 0 auto;
+          margin-top: 35px;
+          line-height: normal;
+          font-size: 50px;
+          color: #ffffff;
+          font-weight: bold;
+          text-align: center;
+        }
+        .text {
+          max-width: 430px;
+          margin: 0 auto;
+          margin-top: 20px;
+          line-height: normal;
+          font-size: 20px;
+          color: #ffffff;
+          text-align: center;
+        }
+        .button {
+          margin: 0 auto;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: -ms-flex;
+          display: flex;
+          -webkit-align-items: center;
+          -ms-align-items: center;
+          align-items: center;
+          -webkit-justify-content: space-between;
+          -ms-justify-content: space-between;
+          justify-content: space-between;
+          margin-top: 27px;
+          line-height: normal;
+          position: relative;
+          padding: 18px 24px;
+          background: #ffffff;
+          box-shadow: 0px 24px 34px rgba(255, 106, 42, 0.75);
+          border-radius: 25px;
+          width: 182px;
+          height: 14px;
+          span {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #ff4f45;
+            font-weight: bold;
+          }
+          &:hover {
+            box-shadow: 0px 4px 4px #ff6a2a;
+          }
+        }
+      }
+    }
+  }
+}
