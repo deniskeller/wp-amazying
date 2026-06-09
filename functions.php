@@ -43,7 +43,6 @@ function amazying_enqueue_scripts()
 
     // настрйоки для страниц
     if (is_page('business')) {
-      wp_enqueue_style('amazying-vite-investor', 'http://localhost:5173/src/styles/style_investor.scss', array(), null);
       wp_enqueue_style('slick-carousel', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css', array(), '1.8.1');
     }
   } else {
@@ -61,12 +60,6 @@ function amazying_enqueue_scripts()
         foreach ($manifest['src/js/main.js']['css'] as $css_file) {
           wp_enqueue_style('amazying-prod-css-' . md5($css_file), get_template_directory_uri() . '/dist/' . $css_file, array(), null);
         }
-      }
-
-      // Если страница бизнеса - берем из манифеста скомпилированный стиль инвестора
-      if (is_page('business') && isset($manifest['src/styles/style_investor.scss']['file'])) {
-        $investor_css = $manifest['src/styles/style_investor.scss']['file'];
-        wp_enqueue_style('amazying-prod-investor', get_template_directory_uri() . '/dist/' . $investor_css, array(), null);
       }
     }
   }
