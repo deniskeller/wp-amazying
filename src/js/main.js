@@ -1,6 +1,6 @@
 import 'virtual:svg-icons-register';
-import '../styles/core.scss';
-import '../styles/main.scss';
+import '../assets/scss/core.scss';
+import '../assets/scss/main.scss';
 
 console.log('DOMContentLoaded');
 

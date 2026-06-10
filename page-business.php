@@ -1,4 +1,4 @@
-<?php get_template_part('src/components/header/header'); ?>
+<?php get_template_part('src/template-parts/header/header'); ?>
 
 <?php get_template_part('src/pages/business/promo/promo'); ?>
 <?php get_template_part('src/pages/business/how-works/how-works'); ?>
@@ -10,4 +10,4 @@
 <?php get_template_part('src/pages/business/why/why'); ?>
 <?php get_template_part('src/pages/business/uzn/uzn'); ?>
 
-<?php get_template_part('src/components/footer/footer'); ?>
+<?php get_template_part('src/template-parts/footer/footer'); ?>

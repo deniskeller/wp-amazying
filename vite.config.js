@@ -5,7 +5,7 @@ import { createSvgIconsPlugin } from 'vite-plugin-svg-icons';
 export default defineConfig({
   plugins: [
     createSvgIconsPlugin({
-      iconDirs: [path.resolve(process.cwd(), 'src/images/icons')],
+      iconDirs: [path.resolve(process.cwd(), 'src/assets/images/icons')],
       symbolId: 'icon-[name]'
     })
   ],
@@ -33,7 +33,7 @@ export default defineConfig({
     preprocessorOptions: {
       scss: {
         api: 'modern-compiler',
-        additionalData: `@use "@/styles/env.scss" as *;`
+        additionalData: `@use "@/assets/scss/env.scss" as *;`
       }
     }
   }

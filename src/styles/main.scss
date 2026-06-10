@@ -1,24 +1,24 @@
 // КОМПОНЕНТЫ
-@forward '../components/header/header';
-@forward '../components/footer/footer';
+@forward '/src/template-parts/header/header';
+@forward '/src/template-parts/footer/footer';
 
 // БОКИ СТРАНИЦ
 // главная
-@forward '../pages/front/investments/investments';
-@forward '../pages/front/how-it-works/how-it-works';
-@forward '../pages/front/projects/projects';
-@forward '../pages/front/why/why';
+@forward '/src/pages/front/investments/investments';
+@forward '/src/pages/front/how-it-works/how-it-works';
+@forward '/src/pages/front/projects/projects';
+@forward '/src/pages/front/why/why';
 
 // business
-@forward '../pages/business/promo/promo';
-@forward '../pages/business/how-works/how-works';
-@forward '../pages/business/start/start';
-@forward '../pages/business/form/form';
-@forward '../pages/business/tovarooborot/tovarooborot';
-@forward '../pages/business/form2/form2';
-@forward '../pages/business/how-get/how-get';
-@forward '../pages/business/why/why';
-@forward '../pages/business/uzn/uzn';
+@forward '/src/pages/business/promo/promo';
+@forward '/src/pages/business/how-works/how-works';
+@forward '/src/pages/business/start/start';
+@forward '/src/pages/business/form/form';
+@forward '/src/pages/business/tovarooborot/tovarooborot';
+@forward '/src/pages/business/form2/form2';
+@forward '/src/pages/business/how-get/how-get';
+@forward '/src/pages/business/why/why';
+@forward '/src/pages/business/uzn/uzn';
 
 .wrapper {
   width: 100%;
