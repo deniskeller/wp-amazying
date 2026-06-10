@@ -2,6 +2,12 @@ import path from 'path';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
+  plugins: [
+    createSvgIconsPlugin({
+      iconDirs: [path.resolve(process.cwd(), 'src/assets/icons')],
+      symbolId: 'icon-[name]'
+    })
+  ],
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src')

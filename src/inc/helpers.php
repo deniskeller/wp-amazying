@@ -14,3 +14,14 @@ function amazying_header_class()
 
   echo implode(' ', $classes);
 }
+
+
+// регистрацию навбаров для админки
+function my_theme_register_menus()
+{
+  register_nav_menus(array(
+    'header_investor_menu' => 'Меню инвестора (Главная)',
+    'header_business_menu' => 'Меню предпринимателя (Бизнес)',
+  ));
+}
+add_action('after_setup_theme', 'my_theme_register_menus');
