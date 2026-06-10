@@ -1,3 +1,4 @@
+import 'virtual:svg-icons-register';
 import '../styles/core.scss';
 import '../styles/main.scss';
 

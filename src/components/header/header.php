@@ -12,8 +12,9 @@
   <header class="<?php amazying_header_class(); ?>">
     <div class="container">
       <div class="header-top">
-        <img src="<?php echo get_template_directory_uri(); ?>/src/images/logo_desktop.svg" class="logo_desktop"></img>
-        <img src="<?php echo get_template_directory_uri(); ?>/src/images/logo_mobile.svg" class="logo_mobile"></img>
+        <svg class="logo">
+          <use href="#icon-logo"></use>
+        </svg>
 
         <div class="header-top__menu">
           <ul>
