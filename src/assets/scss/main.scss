@@ -1,170 +1,21 @@
 // КОМПОНЕНТЫ
-@forward '/src/template-parts/header/header';
-@forward '/src/template-parts/footer/footer';
+@forward '/src/template-parts/header/header.scss';
+@forward '/src/template-parts/footer/footer.scss';
 
 // БОКИ СТРАНИЦ
 // главная
-@forward '/src/pages/front/investments/investments';
-@forward '/src/pages/front/how-it-works/how-it-works';
-@forward '/src/pages/front/projects/projects';
-@forward '/src/pages/front/why/why';
+@forward '/src/pages/front/investments/investments.scss';
+@forward '/src/pages/front/how-it-works/how-it-works.scss';
+@forward '/src/pages/front/projects/projects.scss';
+@forward '/src/pages/front/why/why.scss';
 
 // business
-@forward '/src/pages/business/promo/promo';
-@forward '/src/pages/business/how-works/how-works';
-@forward '/src/pages/business/start/start';
-@forward '/src/pages/business/form/form';
-@forward '/src/pages/business/tovarooborot/tovarooborot';
-@forward '/src/pages/business/form2/form2';
-@forward '/src/pages/business/how-get/how-get';
-@forward '/src/pages/business/why/why';
-@forward '/src/pages/business/uzn/uzn';
-
-.wrapper {
-  width: 100%;
-  max-width: em(1140px);
-  margin: 0 auto;
-  position: relative;
-}
-
-.reg-modal {
-  display: none;
-  min-width: 100%;
-  min-height: 120vh;
-  background: rgba(0, 0, 0, 0.2);
-  position: absolute;
-  overflow: hidden;
-  top: 0;
-  left: 0;
-  z-index: 1090;
-  .wrapper {
-    width: 100%;
-    max-width: 970px;
-    height: 558px;
-    margin: 0 auto;
-    top: 20px;
-    position: relative;
-    background: #ffffff;
-    box-shadow: 0px 94px 114px rgba(121, 121, 121, 0.1);
-    border-radius: 100px;
-    box-sizing: border-box;
-    padding: 58px 80px;
-    .close {
-      position: absolute;
-      top: 0;
-      right: 0;
-      cursor: pointer;
-    }
-    .title {
-      line-height: normal;
-      font-size: 50px;
-      color: #222a33;
-      max-width: 511px;
-    }
-    .img {
-      position: absolute;
-      right: 57px;
-      top: 58px;
-      z-index: 12;
-    }
-    .inputs {
-      margin-top: 38px;
-      width: 420px;
-      position: relative;
-      z-index: 13;
-      .input {
-        display: block;
-        width: 400px;
-        height: 50px;
-        padding: 15px 30px;
-        background: #ffffff;
-        border: 1px solid #e5e5e5;
-        box-sizing: border-box;
-        border-radius: 30px;
-        line-height: normal;
-        font-size: 16px;
-        font-weight: 300;
-        color: #909499;
-        margin-bottom: 10px;
-        outline: none;
-      }
-      .button {
-        width: 400px;
-        height: 50px;
-        box-sizing: border-box;
-        background: #ff4f45;
-        box-shadow: 0px 24px 34px rgba(255, 106, 42, 0.1);
-        border-radius: 30px;
-        line-height: 50px;
-        text-align: center;
-        font-size: 12px;
-        text-transform: uppercase;
-        position: relative;
-        font-weight: bold;
-        color: #ffffff;
-        display: block;
-        .arrow {
-          position: absolute;
-          top: 20px;
-          right: 23px;
-        }
-      }
-    }
-  }
-}
-
-.thank-modal {
-  display: none;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1090;
-  .wrapper {
-    width: 100%;
-    top: 300px;
-    max-width: 605px;
-    height: 300px;
-    background: #ffffff;
-    box-shadow: 0px 94px 114px rgba(121, 121, 121, 0.1);
-    border-radius: 50px;
-    margin: 0 auto;
-    position: relative;
-    box-sizing: border-box;
-    .red-close {
-      position: absolute;
-      top: -10px;
-      right: -10px;
-      cursor: pointer;
-    }
-    .thank-bg {
-      position: absolute;
-      bottom: 0;
-      right: 50px;
-    }
-    .modal-content {
-      padding-left: 50px;
-      padding-top: 60px;
-      .title {
-        line-height: 64px;
-        font-size: 36px;
-        color: #222a33;
-      }
-    }
-  }
-}
-
-.hidden {
-  display: none;
-}
-
-.make-it-slow {
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-  transition: box-shadow 0.3s ease-in-out;
-  &:hover {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  }
-}
+@forward '/src/pages/business/promo/promo.scss';
+@forward '/src/pages/business/how-works/how-works.scss';
+@forward '/src/pages/business/start/start.scss';
+@forward '/src/pages/business/form/form.scss';
+@forward '/src/pages/business/tovarooborot/tovarooborot.scss';
+@forward '/src/pages/business/form2/form2.scss';
+@forward '/src/pages/business/how-get/how-get.scss';
+@forward '/src/pages/business/why/why.scss';
+@forward '/src/pages/business/uzn/uzn.scss';
