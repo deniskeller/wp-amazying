@@ -1,6 +1,7 @@
 # Amazying Theme
 
-[[Оригинальная верстка]](https://amazying.vercel.app/)
+[[Оригинальная верстка - деплой]](https://amazying.vercel.app/)
+[[Оригинальная верстка - код]](https://github.com/deniskeller/Amazying/tree/prod-version)
 
 Улучшение моей старой верстки и ее натяжка на WordPress.
 
